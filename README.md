@@ -19,6 +19,7 @@ The separately reviewed [GitHub WRITE draft PR #45](https://github.com/luciferpr
 - [Why we lost time: Android, browser, identity and integration](docs/05-DELAYS-AND-LESSONS.md)
 - [Branch consolidation and one-system roadmap](docs/06-CONSOLIDATION-ROADMAP.md)
 - [Open development and security gates](docs/07-OPEN-GATES.md)
+- [Submitted demo video review and next acceptance target](docs/08-SUBMITTED-VIDEO-REVIEW.md)
 
 **Official hackathon submission:** confirmed by Cerebral Valley on 5 November 2026; public video provided in the submission: [AIOA spArkHAT demo](https://youtu.be/zYI-1kjgMI0). Later engineering changes should be identified as **post-submission** updates, not silently treated as features that were in the original submitted demo.
 
