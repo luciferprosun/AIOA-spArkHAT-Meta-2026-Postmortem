@@ -4,6 +4,24 @@
 
 > **Status: November 5, 2026.** This is a public documentation and postmortem repository, **not a second implementation of the product**. The canonical source repository remains [AIOA-spArkHAT](https://github.com/luciferprosun/AIOA-spArkHAT). Some features described below are prototypes, some are tested development candidates, and some are future goals.
 
+## Verified milestone: Android → Core → Meta Muse → Linux
+
+On **4 November 2026**, a physical Xiaomi Android client submitted a real chat request through the signed AIOA Core path. The owner separately approved the model call; **Meta Muse Spark 1.3** returned a real response (229 prompt tokens + 301 completion tokens = **530 tokens**, one attempt, no fallback). The signed result was independently verified and displayed in Linux Mission Control. This is a **bounded live mobile-chat integration result**, **not** a completed autonomous GitHub WRITE agent.
+
+The separately reviewed [GitHub WRITE draft PR #45](https://github.com/luciferprosun/AIOA-spArkHAT/pull/45) passed **6/6 required CI jobs** at source `ff38e17a`; on each of Python 3.11 and 3.12, its reported suite contained **2,856 tests with zero failures and five allowed optional skips**, plus additional regressions. This was a **development candidate**, not a live executed remote GitHub write. Results from different revisions are not additive.
+
+## Evidence and engineering reports
+
+- [Executive status and capability matrix](docs/01-EXECUTIVE-STATUS.md)
+- [Real Android / Linux / Meta Muse verification](docs/02-ANDROID-MUSE-LIVE.md)
+- [Muse → AIOA Core → GitHub READ/WRITE boundaries](docs/03-MUSE-CORE-GITHUB.md)
+- [Exact test counts, CI links and historical failures](docs/04-TEST-AND-CI-EVIDENCE.md)
+- [Why we lost time: Android, browser, identity and integration](docs/05-DELAYS-AND-LESSONS.md)
+- [Branch consolidation and one-system roadmap](docs/06-CONSOLIDATION-ROADMAP.md)
+- [Open development and security gates](docs/07-OPEN-GATES.md)
+
+**Official hackathon submission:** confirmed by Cerebral Valley on 5 November 2026; public video provided in the submission: [AIOA spArkHAT demo](https://youtu.be/zYI-1kjgMI0). Later engineering changes should be identified as **post-submission** updates, not silently treated as features that were in the original submitted demo.
+
 ## What we set out to build
 
 Our goal for the Meta AI Developer Hackathon was to bring Meta Muse into an existing, human-governed multi-model agent architecture: **AIOA spArkHAT**. We wanted a unified Linux Mission Control interface, a companion Android experience, verified GitHub repository context, and eventually controlled tool execution. The long-term ambition is one auditable system across devices, rather than a new isolated agent for every hackathon.
